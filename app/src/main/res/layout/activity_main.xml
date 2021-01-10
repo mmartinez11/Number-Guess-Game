@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp" >
+
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <fragment
+        android:id="@+id/List2"
+        class="com.example.project4.ListTwo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="295dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignLeft="@id/fakeView"
+        />
+
+
+
+    <fragment
+        android:id="@+id/List1"
+        class="com.example.project4.ListOne"
+
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignRight="@id/fakeView" />
+
+
+    <EditText
+        android:id="@+id/List1Number"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:clickable="false"
+        android:inputType="none"
+        android:text="Number: " />
+
+    <EditText
+        android:id="@+id/List2Number"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+
+        android:clickable="false"
+        android:inputType="none"
+        android:text="Number: " />
+
+
+</RelativeLayout>
